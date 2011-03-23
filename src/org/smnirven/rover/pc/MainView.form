@@ -42,6 +42,8 @@
                       <Component id="btnSendRedLight" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnGetBattery" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnAllStop" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -61,6 +63,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnSendRedLight" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnGetBattery" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAllStop" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -93,17 +96,15 @@
     <Component class="javax.swing.JComboBox" name="cmbDevices">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbDevicesActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MainView_cmbDevices"/>
+      </AuxValues>
     </Component>
     <Container class="javax.swing.JScrollPane" name="txtLog">
       <AuxValues>
@@ -136,6 +137,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGetBatteryActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAllStop">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ALL STOP"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAllStopActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
